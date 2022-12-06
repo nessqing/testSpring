@@ -15,14 +15,15 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/baseTest")
-@Api(tags = "baseTest")
-public class BaseController {
-
-	@GetMapping(value = "/test")
-	public ResponseEntity<String> findAllStoreInfo() {
-
-		return ResponseEntity.ok("test");
-	}
+@RequestMapping("/member")
+@Api(tags = "會員資料")
+public class MemberController {
+	
+	private final MemberService memberService;
+	@ApiOperation(value = "取得會員資料")
+    @GetMapping("getMember")
+    public ResponseEntity<MemberEntity> getOneMemberData(@RequestParam Integer no) {
+        return ResponseEntity.ok().body(memberService.getMember(no));
+    }
 
 }

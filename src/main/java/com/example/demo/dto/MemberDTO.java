@@ -26,16 +26,13 @@ public class MemberDTO {
     private String memPassword;
 
     @Schema(description = "memMobiles")
-    private Integer memMobile;
-
-    @Schema(description = "memPhoto")
-    private byte[] memImage;
+    private String memMobile;
     
     @Schema(description = "memAddress")
     private String memAdd;
     
     @Schema(description = "memState")
-    private Boolean memState;
+    private boolean memState;
 	
 
 

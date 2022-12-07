@@ -33,17 +33,17 @@ public class MemberEntity {
 	private String memPassword;
 	
 	@Column(name = "mem_mobile")
-	private Integer memMobile;
+	private String memMobile;
 	
 	@Column(name = "mem_img")
 	private byte[] memImage;
 	
-//	memo:address
+	//memo:address
 	@Column(name = "mem_add")
 	private String memAdd;
 	
 	@Column(name = "mem_state")
-	private Boolean memState;
+	private boolean memState;
 	
 	
 	

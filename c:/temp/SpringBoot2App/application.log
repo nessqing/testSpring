@@ -1,0 +1,67 @@
+2022-12-08T09:32:19.251+0800 INFO Starting TestSpringApplication on Haruxiaopengyoudemaijinta.local with PID 7167 (/Users/haru/Desktop/project/testSpring/target/classes started by haru in /Users/haru/Desktop/project/testSpring)
+2022-12-08T09:32:19.254+0800 INFO No active profile set, falling back to default profiles: default
+2022-12-08T09:32:19.500+0800 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-08T09:32:19.516+0800 INFO Finished Spring Data repository scanning in 13ms. Found 1 JPA repository interfaces.
+2022-12-08T09:32:19.671+0800 INFO Tomcat initialized with port(s): 8080 (http)
+2022-12-08T09:32:19.674+0800 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-08T09:32:19.674+0800 INFO Starting service [Tomcat]
+2022-12-08T09:32:19.674+0800 INFO Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-12-08T09:32:19.704+0800 INFO Initializing Spring embedded WebApplicationContext
+2022-12-08T09:32:19.704+0800 INFO Root WebApplicationContext: initialization completed in 439 ms
+2022-12-08T09:32:19.747+0800 INFO HikariPool-1 - Starting...
+2022-12-08T09:32:19.870+0800 INFO HikariPool-1 - Start completed.
+2022-12-08T09:32:19.886+0800 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-08T09:32:19.901+0800 INFO HHH000412: Hibernate ORM core version 5.4.30.Final
+2022-12-08T09:32:19.939+0800 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-08T09:32:19.977+0800 INFO HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-08T09:32:20.152+0800 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-08T09:32:20.155+0800 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-08T09:32:20.327+0800 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-08T09:32:20.389+0800 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-08T09:32:20.440+0800 INFO Starting ProtocolHandler ["http-nio-8080"]
+2022-12-08T09:32:20.446+0800 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-08T09:32:20.525+0800 INFO Started TestSpringApplication in 1.35 seconds (JVM running for 1.658)
+2022-12-08T09:32:44.123+0800 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-08T09:32:44.123+0800 INFO Initializing Servlet 'dispatcherServlet'
+2022-12-08T09:32:44.127+0800 INFO Completed initialization in 4 ms
+2022-12-08T09:32:50.127+0800 INFO log4j, im alive
+2022-12-08T09:32:50.128+0800 INFO Info level log message
+2022-12-08T09:32:50.128+0800 ERROR Error level log message
+2022-12-08T09:35:15.761+0800 INFO Application shutdown requested.
+2022-12-08T09:35:15.773+0800 INFO Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-08T09:35:15.775+0800 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-08T09:35:15.775+0800 INFO HikariPool-1 - Shutdown initiated...
+2022-12-08T09:35:15.778+0800 INFO HikariPool-1 - Shutdown completed.
+2022-12-08T09:42:20.366+0800 DEBUG HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-08T09:42:20.368+0800 DEBUG HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-08T09:42:50.373+0800 DEBUG HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-08T09:42:50.374+0800 DEBUG HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-12-08T09:42:52.813+0800 INFO Application shutdown requested.
+2022-12-08T09:42:52.813+0800 DEBUG Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c345c5f, started on Thu Dec 08 09:40:19 CST 2022
+2022-12-08T09:42:52.814+0800 DEBUG Stopping beans in phase 2147483647
+2022-12-08T09:42:52.814+0800 DEBUG Bean 'documentationPluginsBootstrapper' completed its stop procedure
+2022-12-08T09:42:52.815+0800 DEBUG Bean 'webServerGracefulShutdown' completed its stop procedure
+2022-12-08T09:42:52.815+0800 DEBUG Stopping beans in phase 2147483646
+2022-12-08T09:42:52.825+0800 DEBUG Bean 'webServerStartStop' completed its stop procedure
+2022-12-08T09:42:52.825+0800 DEBUG Unregistering JMX-exposed beans on shutdown
+2022-12-08T09:42:52.826+0800 DEBUG Unregistering JMX-exposed beans
+2022-12-08T09:42:52.826+0800 INFO Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-08T09:42:52.827+0800 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-08T09:42:52.827+0800 DEBUG HHH000031: Closing
+2022-12-08T09:42:52.827+0800 DEBUG Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@1499b802] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4c85e0ed]
+2022-12-08T09:42:52.828+0800 DEBUG Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2022-12-08T09:42:52.828+0800 DEBUG Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2022-12-08T09:42:52.828+0800 INFO HikariPool-1 - Shutdown initiated...
+2022-12-08T09:42:52.828+0800 DEBUG HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2022-12-08T09:42:52.829+0800 DEBUG HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@446a1352: (connection evicted)
+2022-12-08T09:42:52.829+0800 DEBUG HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1ff48d37: (connection evicted)
+2022-12-08T09:42:52.830+0800 DEBUG HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3ad113eb: (connection evicted)
+2022-12-08T09:42:52.830+0800 DEBUG HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@675f3ffb: (connection evicted)
+2022-12-08T09:42:52.830+0800 DEBUG HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6bbf00db: (connection evicted)
+2022-12-08T09:42:52.830+0800 DEBUG HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5019b5ae: (connection evicted)
+2022-12-08T09:42:52.831+0800 DEBUG HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6265aa0d: (connection evicted)
+2022-12-08T09:42:52.831+0800 DEBUG HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7c5bf15d: (connection evicted)
+2022-12-08T09:42:52.831+0800 DEBUG HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6ff19fd5: (connection evicted)
+2022-12-08T09:42:52.831+0800 DEBUG HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1ed0c534: (connection evicted)
+2022-12-08T09:42:52.831+0800 DEBUG HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2022-12-08T09:42:52.832+0800 INFO HikariPool-1 - Shutdown completed.

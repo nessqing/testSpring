@@ -17,12 +17,14 @@ import lombok.RequiredArgsConstructor;
 @Api(tags = "baseTest")
 public class BaseController {
 	private static Logger log = LogManager.getLogger(BaseController.class);
+	
 	@GetMapping(value = "/test")
 	public ResponseEntity<String> findAllStoreInfo() {
 		log.info("log4j, im alive");
 		log.info("Info level log message");
-		log.error("Error level log message");
-		return ResponseEntity.ok("test");
+		
+		
+		return ResponseEntity.ok("testBaseController ok");
 	}
 
 }

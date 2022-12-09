@@ -1,64 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Member_Blue" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2129a7e2-c30c-48bb-be20-f3434c8b056a">
-	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
-	<queryString language="SQL">
-		<![CDATA[select * from cfa102_g5.MEMBER]]>
-	</queryString>
-	<field name="mem_no" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="mem_no"/>
-		<property name="com.jaspersoft.studio.field.label" value="mem_no"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="member"/>
-		<fieldDescription><![CDATA[會員編號]]></fieldDescription>
+
+	<field name="memNo" class="java.lang.Integer">		
 	</field>
-	<field name="mem_name" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="mem_name"/>
-		<property name="com.jaspersoft.studio.field.label" value="mem_name"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="member"/>
-		<fieldDescription><![CDATA[會員姓名]]></fieldDescription>
+	<field name="memName" class="java.lang.String">
+		
 	</field>
-	<field name="mem_sex" class="java.lang.Boolean">
-		<property name="com.jaspersoft.studio.field.name" value="mem_sex"/>
-		<property name="com.jaspersoft.studio.field.label" value="mem_sex"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="member"/>
-		<fieldDescription><![CDATA[會員性別]]></fieldDescription>
+	<field name="memSex" class="java.lang.Integer">
+		
 	</field>
-	<field name="mem_mail" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="mem_mail"/>
-		<property name="com.jaspersoft.studio.field.label" value="mem_mail"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="member"/>
-		<fieldDescription><![CDATA[會員信箱]]></fieldDescription>
+	<field name="memMail" class="java.lang.String">
+		
 	</field>
-	<field name="mem_password" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="mem_password"/>
-		<property name="com.jaspersoft.studio.field.label" value="mem_password"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="member"/>
-		<fieldDescription><![CDATA[會員密碼]]></fieldDescription>
+	<field name="memPassword" class="java.lang.String">
+		
 	</field>
-	<field name="mem_mobile" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="mem_mobile"/>
-		<property name="com.jaspersoft.studio.field.label" value="mem_mobile"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="member"/>
-		<fieldDescription><![CDATA[會員電話]]></fieldDescription>
+	<field name="memMobile" class="java.lang.String">
+		
 	</field>
-	<field name="mem_img" class="byte[]">
-		<property name="com.jaspersoft.studio.field.name" value="mem_img"/>
-		<property name="com.jaspersoft.studio.field.label" value="mem_img"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="member"/>
-		<fieldDescription><![CDATA[會員照片]]></fieldDescription>
+	<field name="memImage" class="byte[]">
+
 	</field>
-	<field name="mem_add" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="mem_add"/>
-		<property name="com.jaspersoft.studio.field.label" value="mem_add"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="member"/>
-		<fieldDescription><![CDATA[會員地址]]></fieldDescription>
+	<field name="memAdd" class="java.lang.String">
+		
 	</field>
-	<field name="mem_state" class="java.lang.Boolean">
-		<property name="com.jaspersoft.studio.field.name" value="mem_state"/>
-		<property name="com.jaspersoft.studio.field.label" value="mem_state"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="member"/>
-		<fieldDescription><![CDATA[會員狀態]]></fieldDescription>
+	<field name="memState" class="java.lang.Boolean">
+		
 	</field>
 	<background>
 		<band/>
@@ -99,7 +67,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[mem_no]]></text>
+				<text><![CDATA[XXX]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="61" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="9b6e4298-f13c-4f7a-a8a1-20c5435cf172">
@@ -108,7 +76,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[mem_name]]></text>
+				<text><![CDATA[XXX]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="122" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="0c27ef87-093e-44f1-b709-1445ff25a0c4">
@@ -117,7 +85,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[mem_sex]]></text>
+				<text><![CDATA[XXX]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="183" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="f46b6285-7bba-4258-baf4-b97b3d8d923a">
@@ -126,7 +94,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[mem_mail]]></text>
+				<text><![CDATA[XXX]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="244" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="40a7f3f4-d7ee-4f0d-b0de-0eb585ac33f1">
@@ -135,7 +103,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[mem_password]]></text>
+				<text><![CDATA[XXX]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="305" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="b9528480-c18c-4dc7-b9f2-da283c57b03e">
@@ -144,7 +112,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[mem_mobile]]></text>
+				<text><![CDATA[XXX]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="366" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="b51262f3-b5ea-4d34-b50a-4770f211dc5d">
@@ -153,7 +121,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[mem_img]]></text>
+				<text><![CDATA[XXX]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="427" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="709aca89-755b-4e99-bd66-31365c0e34df">
@@ -162,7 +130,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[mem_add]]></text>
+				<text><![CDATA[XXX]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="488" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="ea2d3d09-7697-4624-a377-781e86cc4e90">
@@ -171,7 +139,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[mem_state]]></text>
+				<text><![CDATA[XXX]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
@@ -187,7 +155,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{mem_no}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{memNo}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
 				<reportElement x="61" y="0" width="61" height="20" uuid="bd003fc5-fac9-4a5c-ace5-86bf754e34d0">
@@ -196,7 +164,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{mem_name}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{memName}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
 				<reportElement x="122" y="0" width="61" height="20" uuid="a9334ec6-04a1-4def-9856-00de95e1ca00">
@@ -205,7 +173,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{mem_sex}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{memSex}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
 				<reportElement x="183" y="0" width="61" height="20" uuid="fbe22a99-78f3-4d76-a05d-dd7a1f1a6d2d">
@@ -214,7 +182,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{mem_mail}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{memMail}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
 				<reportElement x="244" y="0" width="61" height="20" uuid="3657ccba-a48c-4126-93ec-c4885f619973">
@@ -223,7 +191,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{mem_password}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{memPassword}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
 				<reportElement x="305" y="0" width="61" height="20" uuid="3443d135-ff09-4a49-8621-4ecfa307a3e4">
@@ -232,7 +200,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{mem_mobile}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{memMobile}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
 				<reportElement x="366" y="0" width="61" height="20" uuid="b5d8d926-fe51-4beb-9229-36c25c1ae68d">
@@ -241,7 +209,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{mem_img}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{memImage}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
 				<reportElement x="427" y="0" width="61" height="20" uuid="d275a9fe-d317-433c-835a-3382743012c9">
@@ -250,7 +218,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{mem_add}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{memAdd}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
 				<reportElement x="488" y="0" width="61" height="20" uuid="22ec7916-9ffa-4cf6-a55c-4f371c9e92b1">
@@ -259,7 +227,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{mem_state}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{memState}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

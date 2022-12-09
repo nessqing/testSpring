@@ -42,6 +42,7 @@ public class ReportService {
 		
 		//export to PDF or HTML
 //		JasperExportManager.exportReportToHtmlFile(jasperPrint, path + "/member.html");
+//		JasperExportManager.exportReportToPdfStream(jasperPrint, null);
 		JasperExportManager.exportReportToPdfFile(jasperPrint, path + "/member.pdf");
 		return "report at :" + path + "/member.pdf";
 	}

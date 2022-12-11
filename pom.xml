@@ -52,7 +52,7 @@
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
 
-		<!--springBoot-->
+		<!--swagger-->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-boot-starter</artifactId>

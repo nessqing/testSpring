@@ -2,9 +2,12 @@ package com.example.demo.service;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,13 +27,13 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
 @Service
 public class ReportService {
-	
+
 	@Autowired
 	private MemberRepository memberRepository;
-	
+
 	public String exportReport() throws FileNotFoundException, JRException {
-		
-		//your jrxml will export path
+
+		// your jrxml will export path
 		String path = "/Users/haru/Desktop";
 		List<MemberEntity> members = memberRepository.findAll();
 		File file = ResourceUtils.getFile("src/test.jrxml");
@@ -39,12 +42,24 @@ public class ReportService {
 		Map<String, Object> parameters = new HashMap<>();
 		parameters.put("createdBy", "Haru");
 		JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
-		
-		//export to PDF or HTML
+
+		// export to PDF or HTML
 //		JasperExportManager.exportReportToHtmlFile(jasperPrint, path + "/member.html");
-//		JasperExportManager.exportReportToPdfStream(jasperPrint, null);
 		JasperExportManager.exportReportToPdfFile(jasperPrint, path + "/member.pdf");
 		return "report at :" + path + "/member.pdf";
+	}
+
+	public void generateReport(HttpServletResponse rep) throws JRException, IOException {
+
+		List<MemberEntity> members = memberRepository.findAll();
+		File file = ResourceUtils.getFile("src/test.jrxml");
+		JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
+		JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(members);
+		Map<String, Object> parameters = new HashMap<>();
+		parameters.put("createdBy", "Haru");
+		JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+		JasperExportManager.exportReportToPdfStream(jasperPrint, rep.getOutputStream());
+
 	}
 
 }

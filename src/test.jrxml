@@ -67,7 +67,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[XXX]]></text>
+				<text><![CDATA[No]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="61" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="9b6e4298-f13c-4f7a-a8a1-20c5435cf172">
@@ -76,7 +76,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[XXX]]></text>
+				<text><![CDATA[Name]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="122" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="0c27ef87-093e-44f1-b709-1445ff25a0c4">
@@ -85,7 +85,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[XXX]]></text>
+				<text><![CDATA[Sex]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="183" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="f46b6285-7bba-4258-baf4-b97b3d8d923a">
@@ -94,7 +94,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[XXX]]></text>
+				<text><![CDATA[Mail]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="244" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="40a7f3f4-d7ee-4f0d-b0de-0eb585ac33f1">
@@ -103,7 +103,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[XXX]]></text>
+				<text><![CDATA[Password]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="305" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="b9528480-c18c-4dc7-b9f2-da283c57b03e">
@@ -112,7 +112,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[XXX]]></text>
+				<text><![CDATA[Mobile]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="366" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="b51262f3-b5ea-4d34-b50a-4770f211dc5d">
@@ -130,7 +130,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[XXX]]></text>
+				<text><![CDATA[Address]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="488" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="ea2d3d09-7697-4624-a377-781e86cc4e90">
@@ -139,7 +139,7 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[XXX]]></text>
+				<text><![CDATA[State]]></text>
 			</staticText>
 		</band>
 	</columnHeader>

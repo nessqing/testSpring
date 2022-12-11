@@ -50,7 +50,7 @@ public class BaseController {
 	/**
 	 * JasperReportEnd
 	 */
-
+	@ApiOperation(value = "test")
 	@GetMapping(value = "/test")
 	public ResponseEntity<String> findAllStoreInfo() {
 

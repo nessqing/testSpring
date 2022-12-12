@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.service.ReportService;
+import com.example.demo.service.urlService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -31,6 +32,9 @@ public class BaseController {
 	 */
 	@Autowired
 	private ReportService reportService;
+	
+	@Autowired
+	private urlService ulservice;
 
 	@ApiOperation(value = "JasperReport get all member test")
 	@GetMapping(value = "/reportToLocale")
@@ -41,9 +45,18 @@ public class BaseController {
 	@ApiOperation(value = "JasperReport download member.pdf")
 	@GetMapping(value = "/reportDownload")
 	public void exportReport(HttpServletResponse rep) throws JRException, IOException {
-		rep.setContentType("application/pdf");
+//		rep.setContentType("application/pdf");
 		rep.setHeader("Content-Disposition", "attachment; filename=member.pdf");
 		reportService.generateReport(rep);
+
+	}
+	
+	@ApiOperation(value = "todo Download url Zip")
+	@GetMapping(value = "/urlDownload")
+	public void downloadURL(HttpServletResponse rep) throws JRException, IOException {
+//		rep.setContentType("application/pdf");
+		rep.setHeader("Content-Disposition", "attachment; filename=statement.zip");
+		ulservice.zipurlPDF(rep);
 
 	}
 

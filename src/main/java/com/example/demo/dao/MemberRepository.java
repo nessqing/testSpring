@@ -6,18 +6,18 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.demo.entity.MemberEntity;
 
-public interface MemberRepository extends JpaRepository<MemberEntity, Integer>{
-	
+public interface MemberRepository extends JpaRepository<MemberEntity, Integer> {
+
 	MemberEntity findByMemNo(Integer uuid);
-	
+
 	List<MemberEntity> findByMemStateTrue();
-	
+
 	List<MemberEntity> findAll();
-	
+
 	List<MemberEntity> findByMemSex(Integer gender);
-	
+
 	MemberEntity findByMemMail(String mail);
-	
+
 	MemberEntity findByMemMobile(String mobile);
 
 }

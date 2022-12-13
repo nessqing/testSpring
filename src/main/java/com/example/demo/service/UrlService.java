@@ -21,9 +21,7 @@ public class urlService {
 		
 		InputStream in = url.openStream();
 		ServletOutputStream out = rep.getOutputStream();
-		System.out.println(out);
 		ZipOutputStream zos = new ZipOutputStream(out);
-		System.out.println(zos);
 		zos.putNextEntry(new ZipEntry("test.pdf"));
 
 		int length = -1;
@@ -34,7 +32,6 @@ public class urlService {
 		zos.close();
 		in.close();
 		out.close();
-		System.out.println("File downloaded");
 	}
 
 }

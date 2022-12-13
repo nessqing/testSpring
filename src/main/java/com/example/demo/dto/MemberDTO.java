@@ -1,6 +1,7 @@
 package com.example.demo.dto;
 
 import javax.annotation.Generated;
+import javax.persistence.Column;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -27,6 +28,7 @@ public class MemberDTO {
 
     @Schema(description = "memMobiles")
     private String memMobile;
+
     
     @Schema(description = "memAddress")
     private String memAdd;

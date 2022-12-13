@@ -1,6 +1,11 @@
 package com.example.demo.controller;
 
+import java.io.IOException;
 import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,7 +13,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.dto.MemberDTO;
 import com.example.demo.entity.MemberEntity;
@@ -32,6 +39,13 @@ public class MemberController {
 	@GetMapping("getMember")
 	public ResponseEntity<MemberEntity> getOneMember(@RequestParam Integer no) {
 		return ResponseEntity.ok().body(memberService.getMember(no));
+	}
+	
+	@ApiOperation(value = "取得單筆會員照片")
+	@GetMapping("getMemberPhoto")
+	public void getOneMemberPhoto(@RequestParam Integer no, HttpServletResponse rep) throws IOException {
+		rep.setHeader("Content-Disposition", "attachment; filename=member.jpeg");
+		memberService.getMemberPhoto(no, rep);
 	}
 
 	@ApiOperation(value = "取得還是會員的資料(testpostContainDoGet)")
@@ -67,8 +81,8 @@ public class MemberController {
 	
 	@ApiOperation(value = "新增會員")
 	@PostMapping("postMember")
-	public ResponseEntity<MemberDTO> postMember(@RequestBody MemberDTO memberDTO) {
-		memberService.postMember(memberDTO);
+	public ResponseEntity<MemberDTO> postMember(@RequestBody MemberDTO memberDTO,@RequestPart("file") MultipartFile multipartFile, HttpServletRequest req) throws IOException, ServletException {
+		memberService.postMember(memberDTO, multipartFile, req);
 		return ResponseEntity.ok().body(memberDTO);
 	}
 	

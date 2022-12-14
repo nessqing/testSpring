@@ -37,14 +37,16 @@ public class MemberController {
 
 	@ApiOperation(value = "取得單筆會員資料")
 	@GetMapping("getMember")
-	public ResponseEntity<MemberEntity> getOneMember(@RequestParam Integer no) {
+	public ResponseEntity<MemberEntity> getOneMember(@RequestParam Integer no, HttpServletResponse res) {
+//		res.setHeader("Access-Control-Allow-Origin", "http://localhost:8082");
+//		res.setHeader(Access-Control-Allow-Origin, null)
 		return ResponseEntity.ok().body(memberService.getMember(no));
 	}
 	
 	@ApiOperation(value = "取得單筆會員照片")
 	@GetMapping("getMemberPhoto")
 	public void getOneMemberPhoto(@RequestParam Integer no, HttpServletResponse rep) throws IOException {
-		rep.setHeader("Content-Disposition", "attachment; filename=member.jpeg");
+//		rep.setHeader("Content-Disposition", "attachment; filename=member.jpeg");
 		memberService.getMemberPhoto(no, rep);
 	}
 
@@ -56,7 +58,8 @@ public class MemberController {
 
 	@ApiOperation(value = "取得全會員資料")
 	@GetMapping("getAllRegisteredMember")
-	public ResponseEntity<List<MemberEntity>> getAllRegisteredMember() {
+	public ResponseEntity<List<MemberEntity>> getAllRegisteredMember(HttpServletResponse res) {
+//		res.setHeader("Access-Control-Allow-Origin", "http://localhost:8082");
 		return ResponseEntity.ok().body(memberService.getAllMember());
 	}
 

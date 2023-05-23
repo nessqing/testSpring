@@ -2,6 +2,9 @@ package com.example.demo.dto;
 
 import javax.annotation.Generated;
 import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -13,7 +16,13 @@ import lombok.Data;
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen")
 @Data
 public class MemberDTO {
-
+	
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "mem_no")
+    private Integer memNo;
+	
     @Schema(description = "name")
     private String memName;
 

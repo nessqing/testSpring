@@ -78,10 +78,17 @@ public class MemberService {
 	}
 	
 	@Transactional
-	public void putMember(Integer memberNo, MemberDTO memberDTO) {
-		MemberEntity memberEntity = memberRepository.findByMemNo(memberNo);
-		memberEntity = modelMapper.map(memberDTO, MemberEntity.class);
-		memberEntity.setMemNo(memberNo);
+	public void putMember(MemberDTO memberDTO) throws IOException, ServletException {
+		
+//		Part memImage = req.getPart("file");
+//		InputStream in = memImage.getInputStream();
+//		byte[] img = null;
+//		img = new byte[in.available()];
+//		in.read(img);
+//		in.close();
+		MemberEntity memberEntity = modelMapper.map(memberDTO, MemberEntity.class);
+//		memberEntity.setMemImage(img);
+		
 		memberRepository.save(memberEntity);	
 		
 	}

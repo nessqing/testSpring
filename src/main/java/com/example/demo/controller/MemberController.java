@@ -46,6 +46,7 @@ public class MemberController {
 	@ApiOperation(value = "取得單筆會員照片")
 	@GetMapping("getMemberPhoto")
 	public void getOneMemberPhoto(@RequestParam Integer no, HttpServletResponse rep) throws IOException {
+//		test CORS
 //		rep.setHeader("Content-Disposition", "attachment; filename=member.jpeg");
 		memberService.getMemberPhoto(no, rep);
 	}
@@ -59,6 +60,7 @@ public class MemberController {
 	@ApiOperation(value = "取得全會員資料")
 	@GetMapping("getAllRegisteredMember")
 	public ResponseEntity<List<MemberEntity>> getAllRegisteredMember(HttpServletResponse res) {
+//		test CORS
 //		res.setHeader("Access-Control-Allow-Origin", "http://localhost:8082");
 		return ResponseEntity.ok().body(memberService.getAllMember());
 	}
@@ -90,9 +92,10 @@ public class MemberController {
 	}
 	
 	@ApiOperation(value = "修改會員資料")
-	@PutMapping("putMember")
-	public ResponseEntity<MemberDTO> putMember(@RequestParam Integer no ,@RequestBody MemberDTO memberDTO) {
-		memberService.putMember(no, memberDTO);
+	@PostMapping("putMember")
+	public ResponseEntity<MemberDTO> putMember(@RequestBody MemberDTO memberDTO) throws IOException, ServletException {
+		System.out.println("DTO"+memberDTO);
+		memberService.putMember(memberDTO);
 		return ResponseEntity.ok().body(memberDTO);
 	}
 

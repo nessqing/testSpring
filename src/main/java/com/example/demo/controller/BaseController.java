@@ -65,13 +65,11 @@ public class BaseController {
 	 */
 	@ApiOperation(value = "test")
 	@GetMapping(value = "/test")
-	public ResponseEntity<String> findAllStoreInfo() {
-
-		// log4j test info
-		log.info("log4j, im alive");
-		log.info("Info level log message");
-
+	public ResponseEntity<String> test() {
 		return ResponseEntity.ok("testBaseController ok");
 	}
+	// log4j test info
+//		log.info("log4j, im alive");
+//		log.info("Info level log message");
 
 }

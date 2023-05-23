@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebMvcConfiguration implements WebMvcConfigurer {
 
     public WebMvcConfiguration() {
-        System.out.println("創建配置類");
+//        System.out.println("創建配置類");
     }
 
     @Override
